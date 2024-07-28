@@ -1,8 +1,8 @@
 # Use Debian as the base image
 FROM debian:latest
 
-# Install Git and other required packages
-RUN apt-get update && apt-get install -y git && apt-get clean
+# Install Git, curl, and other required packages
+RUN apt-get update && apt-get install -y git curl && apt-get clean
 
 # Set the working directory
 WORKDIR /usr/src/app
